@@ -1,0 +1,27 @@
+  body {
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    width:90%; /* Adjust the width of the rectangle as needed */
+    height: 90%; /* Adjust the height of the rectangle as needed */
+    background-color: rgba(187, 230, 240, 0.3); /* Adjust transparency by changing the last value (0.5 is 50% transparent) */
+    z-index: 1; /* Ensure the overlay is above the background */
+  }
+  
+  /* Additional styling for the content */
+  .content {
+    z-index: 2; /* Ensure the content is above the overlay */
+    color: white; /* Example text color */
+    text-align: center;
+  }
